@@ -21,7 +21,11 @@ int main() {
         do {
             cout << "do you want to play again? [Y/N]: ";
             getline(cin, answer);
-        }while (answer == "no") ;
+        }while (answer != "yes" && answer != "no");
+        if (answer == "no") {
+            break;
+        }
+
 
         cout << Player_1 << endl;
 
