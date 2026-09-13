@@ -13,6 +13,7 @@ int main() {
         // Tip: si tu depasse 20 le jeu est terminé et le score est bloqué
         while (Player_1 < 20) {
             int score = rand() % 6 + 1;
+            cout << Player_1 << endl;
             cout << score << endl;
             // Tip: si tu fais 1 tu perds tu reset a 0 et ton tour est terminé
             if (score == 1) {
@@ -20,7 +21,7 @@ int main() {
                 break;
             }else Player_1 += score;
             string answer = to_string(Player_1);
-            cout << Player_1 << endl;
+
             do {
                 cout << "do you want to play again Player 1?  [Y/N]: ";
                 getline(cin, answer);
@@ -50,6 +51,8 @@ int main() {
             }
 
         }
+        cout << Player_1 << endl;
+        cout << Player_2 << endl;
         return Player_1 and Player_2;
     }
 }
